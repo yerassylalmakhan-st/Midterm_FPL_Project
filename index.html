@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Football Planner | Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Fantasy Football Planner</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="planner.html">Transfer Planner</a></li>
+          <li class="nav-item"><a class="nav-link" href="fdr.html">Fixture Difficulty</a></li>
+          <li class="nav-item"><a class="nav-link" href="articles.html">Scout Articles</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container py-5">
+    
+    <!-- HERO SECTION -->
+    <section class="p-5 text-white rounded-3 shadow mb-5" style="background-color: var(--fpl-purple);">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="badge bg-success mb-2 px-3 py-2 fw-bold text-uppercase">Gameweek 8 Live</span>
+          <h1 class="display-5 fw-bold mb-3" style="color: var(--fpl-mint);">Master Your Fantasy League Strategy</h1>
+          <p class="lead mb-4">Fantasy Football Planner provides data-driven transfer recommendations, fixture difficulty matrices, and expert scout insight to help you dominate your mini-leagues.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="planner.html" class="btn btn-fpl btn-lg px-4">Plan Transfers</a>
+            <a href="fdr.html" class="btn btn-outline-light btn-lg px-4">View Fixtures</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center d-none d-lg-block">
+          <div class="p-4 rounded-3 text-dark bg-light shadow-sm">
+            <h6 class="text-uppercase fw-bold text-muted mb-1">Deadline Countdown</h6>
+            <h3 class="fw-bold text-danger mb-2">Sat, 11:00 AM</h3>
+            <p class="small text-muted mb-0">Don't forget to set your Captain & Bench before the lockout!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURES OVERVIEW -->
+    <section class="mb-5">
+      <h2 class="fw-bold mb-4" style="color: var(--fpl-purple);">Platform Highlights</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-0 p-3">
+            <div class="card-body">
+              <h5 class="fw-bold" style="color: var(--fpl-purple);">Transfer Calculator</h5>
+              <p class="text-muted small">Simulate transfers, calculate remaining budget, and optimize chip usage before making final squad moves.</p>
+              <a href="planner.html" class="text-decoration-none fw-bold" style="color: var(--fpl-purple);">Try Planner →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-0 p-3">
+            <div class="card-body">
+              <h5 class="fw-bold" style="color: var(--fpl-purple);">Fixture Difficulty</h5>
+              <p class="text-muted small">Analyze 4-gameweek fixture runs color-coded by difficulty rating to target easy match-ups.</p>
+              <a href="fdr.html" class="text-decoration-none fw-bold" style="color: var(--fpl-purple);">Explore Ratings →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-0 p-3">
+            <div class="card-body">
+              <h5 class="fw-bold" style="color: var(--fpl-purple);">Scout Insights</h5>
+              <p class="text-muted small">Stay updated on team news, captaincy picks, differential recommendations, and chip strategies.</p>
+              <a href="articles.html" class="text-decoration-none fw-bold" style="color: var(--fpl-purple);">Read Articles →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP PERFORMERS (4 CARDS) -->
+    <section>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold m-0" style="color: var(--fpl-purple);">Top Fantasy Performers</h2>
+        <span class="badge bg-secondary">Total Points Leaderboard</span>
+      </div>
+      <div class="row g-4">
+        <!-- Player 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100" style="border-left: 5px solid var(--fpl-mint) !important;">
+            <div class="card-body">
+              <span class="badge bg-light text-dark mb-2">Man City</span>
+              <h5 class="card-title fw-bold">Erling Haaland</h5>
+              <p class="card-text text-muted mb-0">Forward • 210 Points</p>
+            </div>
+          </div>
+        </div>
+        <!-- Player 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100" style="border-left: 5px solid var(--fpl-mint) !important;">
+            <div class="card-body">
+              <span class="badge bg-light text-dark mb-2">Liverpool</span>
+              <h5 class="card-title fw-bold">Mohamed Salah</h5>
+              <p class="card-text text-muted mb-0">Midfielder • 195 Points</p>
+            </div>
+          </div>
+        </div>
+        <!-- Player 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100" style="border-left: 5px solid var(--fpl-mint) !important;">
+            <div class="card-body">
+              <span class="badge bg-light text-dark mb-2">Arsenal</span>
+              <h5 class="card-title fw-bold">Bukayo Saka</h5>
+              <p class="card-text text-muted mb-0">Midfielder • 178 Points</p>
+            </div>
+          </div>
+        </div>
+        <!-- Player 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100" style="border-left: 5px solid var(--fpl-mint) !important;">
+            <div class="card-body">
+              <span class="badge bg-light text-dark mb-2">Chelsea</span>
+              <h5 class="card-title fw-bold">Cole Palmer</h5>
+              <p class="card-text text-muted mb-0">Midfielder • 165 Points</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-custom">
+    <div class="container">
+      <p class="mb-0">© 2026 Fantasy Football Planner. Created by Yerassyl Almakhan & Ualikhan Beibarys.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

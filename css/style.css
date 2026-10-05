@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  --fpl-purple: #37003c;
+  --fpl-mint: #00ff87;
+  --fpl-light: #f8f9fa;
+  --fpl-dark: #121212;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--fpl-light);
+  color: var(--fpl-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main { flex: 1; }
+
+/* Custom Navbar Styles */
+.navbar-custom { 
+  background-color: var(--fpl-purple); 
+}
+
+.navbar-custom .navbar-brand { 
+  color: var(--fpl-mint); 
+  font-weight: 800; 
+}
+
+
+.navbar-custom .nav-link { 
+  color: rgba(255, 255, 255, 0.85); 
+  font-weight: 600; 
+  transition: color 0.2s ease-in-out;
+}
+
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active { 
+  color: var(--fpl-mint) !important; 
+  font-weight: 800;
+}
+
+.navbar-toggler { 
+  border-color: var(--fpl-mint); 
+}
+
+.navbar-toggler-icon { 
+  filter: invert(62%) sepia(97%) saturate(2250%) hue-rotate(99deg) brightness(104%) contrast(105%); 
+}
+
+
+.btn-fpl { 
+  background-color: var(--fpl-mint); 
+  color: var(--fpl-purple); 
+  font-weight: 800; 
+  border: none; 
+}
+
+.btn-fpl:hover { 
+  background-color: #00cc6a; 
+  transform: scale(1.05); 
+}
+
+
+.footer-custom { 
+  background-color: var(--fpl-purple); 
+  color: white; 
+  padding: 20px 0; 
+  text-align: center; 
+  margin-top: auto; 
+} 
