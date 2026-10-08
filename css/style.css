@@ -71,3 +71,9 @@ main { flex: 1; }
   text-align: center; 
   margin-top: auto; 
 } 
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
